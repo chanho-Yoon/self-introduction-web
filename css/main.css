@@ -1,0 +1,168 @@
+html {
+	font-family : 'Noto Sans KR', sans-serif;
+	font-size   : 14px;
+}
+/* mobile */
+@media (max-width : 700px ) {
+	html {
+		font-size : 7px;
+	}
+
+	.name-job-list {
+		margin-top : -22.4px;
+	}
+
+	@keyframes showJobList-phone {
+		0% {
+			margin-top : 0;
+		}
+		25% {
+			margin-top : -22.4px;
+		}
+		50% {
+			margin-top : -44.8px;
+		}
+		75% {
+			margin-top : -67.2px;
+		}
+		100% {
+			margin-top : -89.6px;
+		}
+		100% {
+			margin-top : 0;
+		}
+	}
+	.name-job-list {
+		animation-name            : showJobList-phone;
+		animation-delay           : 2s;
+		animation-duration        : 10s;
+		animation-iteration-count : infinite;
+	}
+
+	.main-content {
+		display        : flex;
+		flex-direction : column;
+	}
+}
+/* 데스크탑 */
+@media (min-width : 700px) {
+	@keyframes showJobList {
+		0% {
+			margin-top : 0;
+		}
+		25% {
+			margin-top : -44.8px;
+		}
+		50% {
+			margin-top : -89.6px;
+		}
+		75% {
+			margin-top : -134.4px;
+		}
+		100% {
+			margin-top : -179.2px;
+		}
+		100% {
+			margin-top : 0;
+		}
+	}
+
+	.name-job-list {
+		animation-name            : showJobList;
+		animation-delay           : 2s;
+		animation-duration        : 10s;
+		animation-iteration-count : infinite;
+	}
+}
+/* 데스크탑 */
+@media (min-width : 950px) {
+	.main-content {
+		display        : flex;
+		flex-direction : row;
+	}
+
+	.main-content .photo-section {
+		width : 45%;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+	}
+	.photo-section .photo {
+		height: 80%;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	.profile {
+		width : 55%;
+	}
+}
+
+body {
+	background-color : #141414;
+	color            : #e0e2dd;
+}
+.main-content {
+	height: 100vh;
+	color: silver;
+}
+.nav {
+	font-family      : 'Potta One', cursive;
+	display          : flex;
+	justify-content  : left;
+	align-items      : center;
+	position         : fixed;
+	height           : 40px;
+	width            : 100%;
+	background-color : #141414;
+	font-size        : 1.2rem;
+	color            : #e0e2dd;
+	z-index: 10;
+}
+
+.nav .link:first-child {
+	padding-right : 4rem;
+	padding-left  : 1.5rem;
+}
+
+.photo {
+	position            : relative;
+	background-image    : url("/img/profile1.JPG");
+	background-size     : cover;
+	background-position : center;
+	padding-top         : 56.2%;
+	top                 : 40px;
+	margin-bottom       : 42px;
+}
+
+.profile {
+	padding : 5%;
+}
+
+.profile-header, .profile-section {
+	padding-bottom : 7%;
+}
+
+.name {
+	font-family : 'Nanum Pen Script', cursive;
+	font-size   : 3.2rem;
+	display     : flex;
+}
+
+.name strong {
+	float         : left;
+	font-size     : 3.2rem;
+	padding-right : 1rem;
+}
+
+.name-job {
+	height   : 3.2rem;
+	overflow : hidden;
+	color: white;
+}
+
+.my-name {
+	font-family : 'Nanum Pen Script', cursive;
+	font-size   : 3.1rem;
+
+}
