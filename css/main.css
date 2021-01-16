@@ -194,7 +194,7 @@ body {
 }
 
 .section-header {
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	font-weight: bold;
 	color: var(--header_color);
 	margin-top: 1rem;
@@ -207,12 +207,21 @@ body {
 .listFlex {
 	display: flex;
 }
+
+.section-content .listFlex:first-child {
+	margin-top: 1rem;
+}
+
 .listFlex-content {
 	margin-left: 15px;
 	display: flex;
 }
 
 .listText-header {
-	font-size: 1rem;
+	font-size: 1.2rem;
 	font-weight: bold;
+}
+
+.section-content ul li {
+	margin-bottom: 1rem;
 }
