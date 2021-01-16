@@ -23,16 +23,13 @@ html {
 			margin-top : 0;
 		}
 		25% {
-			margin-top : -22.4px;
+			margin-top : -32px;
 		}
 		50% {
-			margin-top : -44.8px;
+			margin-top : -64px;
 		}
 		75% {
-			margin-top : -67.2px;
-		}
-		100% {
-			margin-top : -89.6px;
+			margin-top : -96px;
 		}
 		100% {
 			margin-top : 0;
@@ -69,9 +66,6 @@ html {
 		}
 		75% {
 			margin-top : -134.4px;
-		}
-		100% {
-			margin-top : -179.2px;
 		}
 		100% {
 			margin-top : 0;
@@ -229,3 +223,7 @@ body {
 .section-content ul li {
 	margin-bottom : 1rem;
 }
+
+/*.job-list-shadow:not(:first-child) {*/
+/*	opacity: 1;*/
+/*}*/
