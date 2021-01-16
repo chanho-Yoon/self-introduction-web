@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
@@ -15,21 +16,23 @@
 <body>
 <div class="container">
 	<div class="nav">
-		<nav class="link">
-			<a href="">home</a>
+		<nav class="link" id="nav-home">
+			home
 		</nav>
-		<nav class="link">
-			<a href="">about</a>
+		<nav class="link" id="nav-about">
+			about
 		</nav>
 	</div>
 	<div class="main-content">
+		<!--		사진부분 -->
 		<section class="photo-section">
 			<div class="photo">
 			</div>
 		</section>
+		<!--			profile 설명된 부분 -->
 		<div class="profile">
 			<div class="profie-header">
-				<strong class="my-name">Chanho Yoon</strong>
+				<strong class="my-name" id="my-name">Chanho Yoon</strong>
 				<div class="name">
 					<strong>저는</strong>
 					<div class="name-job">
@@ -237,6 +240,22 @@
 								</div>
 							</li>
 						</ul>
+					</div>
+				</div>
+				<div class="footer">
+					<div class="footer-header">
+						<p>Contact</p>
+					</div>
+					<div class="footer-icon">
+						<a href="https://github.com/chanho-Yoon" target="_blank">
+							<i class="fab fa-github"></i>
+						</a>
+						<a href="https://chanho-yoon.github.io/" target="_blank">
+							<i class="fas fa-blog"></i>
+						</a>
+						<a href="mailto:chyoon0512@gmail.com" target="_blank">
+							<i class="fas fa-envelope-open"></i>
+						</a>
 					</div>
 				</div>
 			</section>

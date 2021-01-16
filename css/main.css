@@ -143,6 +143,13 @@ body {
 	z-index          : 10;
 }
 
+.nav .link {
+	cursor: pointer;
+}
+.nav .link:hover {
+	color: cadetblue;
+}
+
 .nav .link:first-child {
 	padding-right : 4rem;
 	padding-left  : 1.5rem;
@@ -224,6 +231,37 @@ body {
 	margin-bottom : 1rem;
 }
 
-/*.job-list-shadow:not(:first-child) {*/
-/*	opacity: 1;*/
-/*}*/
+/* footer */
+
+.footer {
+	width: 100%;
+	margin-top: 3.6rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-top: var(--header_color);
+	border-top-style: solid;
+	border-top-width: 1px;
+	padding: 1rem 0
+}
+
+.footer-header {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-top: 2.5rem;
+	display: flex;
+	justify-content: center;
+}
+
+
+.footer-icon {
+	font-size: 1.5rem;
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+}
+
+.footer-icon a {
+	margin: 0 2rem;
+}
