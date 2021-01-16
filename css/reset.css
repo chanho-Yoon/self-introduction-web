@@ -6,14 +6,15 @@
 
 html {
 	font-family : 'Apple SD Gothic Neo', Roboto, 'Noto Sans KR', NanumGothic, 'Malgun Gothic', sans-serif;
-	box-sizing  : border-box;
 	line-height : 1.2;
 	word-wrap   : break-word;
 }
+
 a {
-	text-decoration: none;
-	color: white;
+	text-decoration : none;
+	color           : white;
 }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -33,6 +34,10 @@ time, mark, audio, video {
 	font-size      : 100%;
 	font           : inherit;
 	vertical-align : baseline;
+}
+
+body {
+	box-sizing : border-box;
 }
 
 /* HTML5 display-role reset for older browsers */

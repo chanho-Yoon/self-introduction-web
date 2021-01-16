@@ -1,7 +1,12 @@
+:root {
+	--header_color : cadetblue;
+}
+
 html {
 	font-family : 'Noto Sans KR', sans-serif;
 	font-size   : 14px;
 }
+
 /* mobile */
 @media (max-width : 700px ) {
 	html {
@@ -43,7 +48,12 @@ html {
 		display        : flex;
 		flex-direction : column;
 	}
+
+	.profile-section {
+		line-height : 2.2rem;
+	}
 }
+
 /* 데스크탑 */
 @media (min-width : 700px) {
 	@keyframes showJobList {
@@ -66,6 +76,9 @@ html {
 			margin-top : 0;
 		}
 	}
+	.profile-section {
+		line-height : 1.6rem;
+	}
 
 	.name-job-list {
 		animation-name            : showJobList;
@@ -74,6 +87,7 @@ html {
 		animation-iteration-count : infinite;
 	}
 }
+
 /* 데스크탑 */
 @media (min-width : 950px) {
 	.main-content {
@@ -82,30 +96,42 @@ html {
 	}
 
 	.main-content .photo-section {
-		width : 45%;
-		height: 100vh;
-		display: flex;
-		align-items: center;
+		width       : 45%;
+		height      : 100vh;
+		display     : flex;
+		align-items : center;
 	}
+
 	.photo-section .photo {
-		height: 100%;
-		width: 100%;
-		padding: 0;
-		margin: 0;
+		height  : 100%;
+		width   : 100%;
+		padding : 0;
+		margin  : 0;
 	}
-	.profile {
+	.photo-section {
+		max-width: 460px;
+		position: fixed;
+	}
+	.main-content .profile {
 		width : 55%;
+		max-width: 850px;
+		margin-left : 470px;
+		padding: 10px 10px;
+		margin-top: 40px;
 	}
+
 }
 
 body {
 	background-color : #141414;
 	color            : #e0e2dd;
 }
+
 .main-content {
-	height: 100vh;
-	color: silver;
+	height : 100vh;
+	color  : silver;
 }
+
 .nav {
 	font-family      : 'Potta One', cursive;
 	display          : flex;
@@ -117,7 +143,7 @@ body {
 	background-color : #141414;
 	font-size        : 1.2rem;
 	color            : #e0e2dd;
-	z-index: 10;
+	z-index          : 10;
 }
 
 .nav .link:first-child {
@@ -136,7 +162,7 @@ body {
 }
 
 .profile {
-	padding : 5%;
+	padding : 2% 5%;
 }
 
 .profile-header, .profile-section {
@@ -158,11 +184,35 @@ body {
 .name-job {
 	height   : 3.2rem;
 	overflow : hidden;
-	color: white;
+	color    : white;
 }
 
 .my-name {
 	font-family : 'Nanum Pen Script', cursive;
 	font-size   : 5rem;
-	color: cadetblue;
+	color       : var(--header_color);
+}
+
+.section-header {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: var(--header_color);
+	margin-top: 1rem;
+}
+
+
+.listEmoticon {
+	margin-right: 5px;
+}
+.listFlex {
+	display: flex;
+}
+.listFlex-content {
+	margin-left: 15px;
+	display: flex;
+}
+
+.listText-header {
+	font-size: 1rem;
+	font-weight: bold;
 }
